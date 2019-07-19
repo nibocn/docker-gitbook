@@ -32,10 +32,12 @@ RUN apt-get update -y \
 
 RUN gitbook fetch ${GITBOOK_VERSION}
 
+ENV BOOKDIR /book
+
+VOLUME $BOOKDIR
 
 EXPOSE 4000 35729
 
-RUN mkdir /book
-WORKDIR /book
+WORKDIR $BOOKDIR
 
 CMD ["gitbook", "--help"]
