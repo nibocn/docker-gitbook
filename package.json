@@ -1,0 +1,13 @@
+{
+  "name": "docker-gitbook",
+  "version": "v0.0.2",
+  "description": "Docker Gitbook",
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nibocn/docker-gitbook"
+  },
+  "author": "NiBo"
+}
