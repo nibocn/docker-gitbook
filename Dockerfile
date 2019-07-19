@@ -33,7 +33,7 @@ RUN apt-get update -y \
 RUN gitbook fetch ${GITBOOK_VERSION}
 
 
-EXPOSE 4000
+EXPOSE 4000 35729
 
 RUN mkdir /book
 WORKDIR /book
