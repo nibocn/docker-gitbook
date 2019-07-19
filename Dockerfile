@@ -20,17 +20,23 @@ RUN \
 ENV PATH="/opt/nodejs/bin:${PATH}"
 
 # Install gitbook
-RUN npm install -g gitbook-cli
+RUN \
+    npm install -g gitbook-cli \
+    && gitbook fetch ${GITBOOK_VERSION}
+
 
 # Install fonts
 RUN apt-get update -y \
     && apt-get install -y fontconfig \
-    && apt-get install -y fonts-arphic-ukai \
+        \
+    # 安装中文字体
+    && apt-get install -y fonts-arphic-ukai fonts-arphic-uming \
+        \
+    # 安装日文字体
+    && apt-get install -y fonts-ipafont fonts-ipaexfont \
     && fc-cache -fv \
     && apt-get autoremove -y && apt-get clean \
     && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
-
-RUN gitbook fetch ${GITBOOK_VERSION}
 
 ENV BOOKDIR /book
 
