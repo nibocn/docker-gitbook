@@ -1,3 +1,12 @@
+## [0.0.4](https://github.com/nibocn/docker-gitbook/compare/v0.0.3...v0.0.4) (2019-07-19)
+
+
+### Features
+
+* **font:** 添加日文字体支持 ([2768855](https://github.com/nibocn/docker-gitbook/commit/2768855))
+
+
+
 <a name="0.0.3"></a>
 ## [0.0.3](https://github.com/nibocn/docker-gitbook/compare/v0.0.2...v0.0.3) (2019-07-19)
 
