@@ -38,6 +38,9 @@ RUN apt-get update -y \
     && apt-get autoremove -y && apt-get clean \
     && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
+# Install npm package
+RUN npm install -g svgexport
+
 ENV BOOKDIR /book
 
 VOLUME $BOOKDIR
