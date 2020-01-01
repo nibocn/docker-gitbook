@@ -1,3 +1,12 @@
+## [0.0.5](https://github.com/nibocn/docker-gitbook/compare/v0.0.4...v0.0.5) (2020-01-01)
+
+
+### Features
+
+* Install npm package ([50d70e9](https://github.com/nibocn/docker-gitbook/commit/50d70e9))
+
+
+
 ## [0.0.4](https://github.com/nibocn/docker-gitbook/compare/v0.0.3...v0.0.4) (2019-07-19)
 
 
