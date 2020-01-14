@@ -45,8 +45,7 @@ RUN apt-get update -y \
     && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
 # Install npm package
-RUN npm install --unsafe-perm -g svgexport \
-    && npm install -g node-plantuml
+RUN npm install --unsafe-perm -g svgexport
 
 ENV BOOKDIR /book
 
