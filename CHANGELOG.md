@@ -1,3 +1,14 @@
+<a name="0.0.6"></a>
+## [0.0.6](https://github.com/nibocn/docker-gitbook/compare/v0.0.5...v0.0.6) (2020-01-14)
+
+
+### Features
+
+* Add node-plantuml package ([3e87c80](https://github.com/nibocn/docker-gitbook/commit/3e87c80))
+* Install Java JRE ([a3aa0bf](https://github.com/nibocn/docker-gitbook/commit/a3aa0bf))
+
+
+
 ## [0.0.5](https://github.com/nibocn/docker-gitbook/compare/v0.0.4...v0.0.5) (2020-01-01)
 
 
