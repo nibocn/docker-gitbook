@@ -38,6 +38,12 @@ RUN apt-get update -y \
     && apt-get autoremove -y && apt-get clean \
     && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
+# Java JRE Install
+RUN apt-get update -y \
+    && apt-get install -y default-jre \
+    && apt-get autoremove -y && apt-get clean \
+    && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
+
 # Install npm package
 RUN npm install --unsafe-perm -g svgexport \
     && npm install -g node-plantuml
